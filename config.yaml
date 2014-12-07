@@ -2,6 +2,7 @@ paths:
   templates: ./templates
   scripts: ./scripts
   build: /run/dock0/bootmnt
+  base: /
 org: dock0
 artifacts:
   - name: kernels
