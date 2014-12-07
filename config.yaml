@@ -10,7 +10,7 @@ artifacts:
     link: /current/kernel
   - name: vm_root
     version: 0.0.8
-    file: root.sfs.fs
+    file: root.fs.sfs
     link: /current/vm_root
   - name: initrd
     version: 0.0.5
