@@ -10,10 +10,10 @@ artifacts:
     file: vmlinuz
     link: /current/kernel
   - name: vm_root
-    version: 0.0.10
+    version: 0.0.12
     file: root.fs.sfs
     link: /current/vm_root
   - name: initrd
-    version: 0.0.6
+    version: 0.0.7
     file: initrd.img
     link: /current/initrd
