@@ -1,0 +1,8 @@
+timeout 10
+default 0
+
+title dock0
+root (hd0)
+kernel /current/kernel root=/dev/xvda cow_dev=/dev/dock0/cowland
+initrd /current/initrd
+

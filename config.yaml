@@ -1,0 +1,18 @@
+paths:
+  templates: ./templates
+  scripts: ./scripts
+  build: /run/dock0/bootmnt
+org: dock0
+artifacts:
+  - name: kernels
+    version: 3.18-rc7_1
+    file: vmlinuz
+    link: /current/kernel
+  - name: vm_root
+    version: 0.0.8
+    file: root.sfs.fs
+    link: /current/vm_root
+  - name: initrd
+    version: 0.0.5
+    file: initrd.img
+    link: /current/initrd
