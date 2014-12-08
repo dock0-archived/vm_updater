@@ -5,10 +5,12 @@ vm_install
 
 My deployment spec for [dock0](https://github.com/dock0/dock0)
 
-## Prerequisites
+## To use
+
+The provided Docker container will automate deploying this spec
 
 ```
-bundle install
+docker run -ti -v /run/dock0/bootmnt:/run/dock0/bootmnt dock0/vm_install
 ```
 
 ## License
