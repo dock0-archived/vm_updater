@@ -14,6 +14,6 @@ artifacts:
     file: root.fs.sfs
     link: /current/vm_root
   - name: initrd
-    version: 0.0.13
+    version: 0.0.15
     file: initrd.img
     link: /current/initrd
