@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+git clone git://github.com/dock0/vm_install /opt/vm_install
+dock0 install /opt/vm_install/config.yaml
+
