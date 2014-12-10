@@ -1,7 +1,9 @@
 vm_install
 ========
 
+[![Automated Build](http://img.shields.io/badge/automated-build-green.svg)](https://registry.hub.docker.com/u/dock0/vm_install/)
 [![MIT Licensed](http://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
+
 
 My deployment spec for [dock0](https://github.com/dock0/dock0)
 
