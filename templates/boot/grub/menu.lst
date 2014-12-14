@@ -7,7 +7,7 @@ kernel /latest/kernel
 initrd /latest/initrd
 
 <% Dir.chdir("#{@paths['build']}/releases") do %>
-<% Dir.glob('*').each do |release| %>
+<% Dir.glob('*').sort.drop(1).each do |release| %>
 title archive - <%= release %>
 root (hd0)
 kernel /releases/<%= release %>/kernel
