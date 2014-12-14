@@ -1,8 +1,17 @@
 timeout 10
 default 0
 
-title dock0
+title latest
 root (hd0)
-kernel /current/kernel
-initrd /current/initrd
+kernel /latest/kernel
+initrd /latest/initrd
 
+<% Dir.chdir("#{@paths['build']}/releases") do %>
+<% Dir.glob('*').each do |release| %>
+title archive - <%= release %>
+root (hd0)
+kernel /releases/<%= release %>/kernel
+initrd /releases/<%= release %>/initrd
+
+<% end %>
+<% end %>
