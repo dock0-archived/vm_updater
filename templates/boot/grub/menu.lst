@@ -3,14 +3,14 @@ default 0
 
 title latest
 root (hd0)
-kernel /latest/kernel
+kernel /latest/kernel rootfspath=/latest/vm_root
 initrd /latest/initrd
 
 <% Dir.chdir("#{@paths['build']}/releases") do %>
 <% Dir.glob('*').sort.drop(1).each do |release| %>
 title archive - <%= release %>
 root (hd0)
-kernel /releases/<%= release %>/kernel
+kernel /releases/<%= release %>/kernel rootfspath=/releases/<%= release %>/vm_root
 initrd /releases/<%= release %>/initrd
 
 <% end %>
