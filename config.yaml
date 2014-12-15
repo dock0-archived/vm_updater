@@ -9,7 +9,7 @@ artifacts:
     version: 3.18_1
     file: vmlinuz
   - name: vm_root
-    version: 0.0.37
+    version: 0.0.38
     file: root.fs.sfs
   - name: initrd
     version: 0.0.32
