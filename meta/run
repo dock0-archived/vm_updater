@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
-git clone git://github.com/dock0/vm_install /opt/vm_install
+git clone git://github.com/dock0/vm_install /opt/vm_install \
+    --single-branch --branch $BRANCH
 dock0 install /opt/vm_install/config.yaml
 
