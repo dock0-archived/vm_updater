@@ -6,7 +6,7 @@ paths:
 org: dock0
 artifacts:
   - name: kernel
-    version: 3.18_1
+    version: 3.18.1_2
     file: vmlinuz
   - name: vm_root
     version: 0.0.55
