@@ -12,14 +12,14 @@ My deployment spec for [dock0](https://github.com/dock0/dock0)
 The provided Docker container will automate deploying this spec
 
 ```
-docker run -ti -v /run/dock0/bootmnt:/run/dock0/bootmnt dock0/vm_install
+docker run -ti -v /run/vm/bootmnt:/run/vm/bootmnt dock0/vm_install
 ```
 
 To use an alternate branch for the installation, specify it via the environment:
 
 ```
 # this will use the dev branch
-docker run -ti -e BRANCH=dev -v /run/dock0/bootmnt:/run/dock0/bootmnt dock0/vm_install
+docker run -ti -e BRANCH=dev -v /run/vm/bootmnt:/run/vm/bootmnt dock0/vm_install
 ```
 
 ## License

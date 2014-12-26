@@ -1,7 +1,7 @@
 paths:
   templates: ./templates
   scripts: ./scripts
-  build: /run/dock0/bootmnt
+  build: /run/vm/bootmnt
   base: /
 org: dock0
 artifacts:
