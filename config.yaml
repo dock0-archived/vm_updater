@@ -10,7 +10,7 @@ artifacts:
   version: 3.19_1
   file: vmlinuz
 - name: vm_root
-  version: 0.0.75
+  version: 0.0.76
   file: root.fs.sfs
 - name: initrd
   version: 0.0.36
