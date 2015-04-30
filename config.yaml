@@ -13,5 +13,5 @@ artifacts:
   version: 0.0.94
   file: root.fs.sfs
 - name: initrd
-  version: 0.0.37
+  version: 0.0.41
   file: initrd.img
