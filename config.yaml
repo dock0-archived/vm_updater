@@ -7,11 +7,11 @@ paths:
 org: dock0
 artifacts:
 - name: kernel
-  version: 4.1-rc1_1
+  version: 4.1-rc2_1
   file: vmlinuz
 - name: vm_root
-  version: 0.0.94
+  version: 0.0.95
   file: root.fs.sfs
 - name: initrd
-  version: 0.0.37
+  version: 0.0.41
   file: initrd.img
