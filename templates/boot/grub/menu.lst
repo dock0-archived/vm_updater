@@ -1,4 +1,4 @@
-<% console = File.read('/sys/hypervisor/type').rstrip == 'xen' ? 'hvc0' : 'ttyS0,38400n8' %>
+<% console = File.exist?('/sys/hypervisor/type') ? 'hvc0' : 'ttyS0,38400n8' %>
 timeout 25
 default 0
 
