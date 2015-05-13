@@ -1,16 +1,17 @@
+<% console = File.read('/sys/hypervisor/type').rstrip == 'xen' ? 'hvc0' : 'ttyS0,38400n8' %>
 timeout 25
 default 0
 
 title latest
 root (hd0)
-kernel /latest/kernel rootfspath=/latest/vm_root
+kernel /latest/kernel rootfspath=/latest/vm_root console=<%= console %>
 initrd /latest/initrd
 
 <% Dir.chdir("#{@paths[:build]}/releases") do %>
 <% Dir.glob('*').sort.drop(1).each do |release| %>
 title archive - <%= release %>
 root (hd0)
-kernel /releases/<%= release %>/kernel rootfspath=/releases/<%= release %>/vm_root
+kernel /releases/<%= release %>/kernel rootfspath=/releases/<%= release %>/vm_root console=<%= console %>
 initrd /releases/<%= release %>/initrd
 
 <% end %>
