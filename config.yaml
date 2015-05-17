@@ -15,3 +15,6 @@ artifacts:
 - name: initrd
   version: 0.0.46
   file: initrd.img
+- name: config
+  version: 0.0.1
+  url: /run/vm/bootmnt/sources/config/0.0.1
