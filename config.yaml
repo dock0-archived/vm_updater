@@ -10,8 +10,8 @@ artifacts:
   version: 4.3-rc5_1
   file: vmlinuz
 - name: vm_root
-  version: 0.0.132
+  version: 0.0.134
   file: root.fs.sfs
 - name: initrd
-  version: 0.0.55
+  version: 0.0.56
   file: initrd.img
