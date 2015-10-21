@@ -2,6 +2,7 @@ vm_install
 ========
 
 [![Automated Build](http://img.shields.io/badge/automated-build-green.svg)](https://hub.docker.com/r/dock0/vm_install/)
+[![Build Status](https://img.shields.io/circleci/project/dock0/vm_install.svg)](https://circleci.com/gh/dock0/vm_install)
 [![MIT Licensed](http://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
 
 
