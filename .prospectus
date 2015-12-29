@@ -1,0 +1,19 @@
+require 'yaml'
+
+YAML.load(File.read('config.yaml'))['artifacts'].each do |artifact|
+  name, version = artifact.values_at('name', 'version')
+
+  item do
+    name "vm_install::#{name}"
+
+    expected do
+      github_release
+      repo "dock0/#{name}"
+    end
+
+    actual do
+      static
+      set version
+    end
+  end
+end
