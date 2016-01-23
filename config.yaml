@@ -9,7 +9,7 @@ artifacts:
 - name: kernel
   version: 4.4_2
   file: vmlinuz
-- name: vm_root
+- name: rootfs
   version: 0.0.166
   file: root.fs.sfs
 - name: initrd

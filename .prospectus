@@ -4,7 +4,7 @@ YAML.load(File.read('config.yaml'))['artifacts'].each do |artifact|
   name, version = artifact.values_at('name', 'version')
 
   item do
-    name "vm_install::#{name}"
+    name "vm_spec::#{name}"
 
     expected do
       github_release
