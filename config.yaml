@@ -10,7 +10,7 @@ artifacts:
   version: 4.5-rc3_1
   file: vmlinuz
 - name: rootfs
-  version: 0.0.173
+  version: 0.0.174
   file: root.fs.sfs
 - name: initrd
   version: 0.0.66
