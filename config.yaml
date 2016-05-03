@@ -7,7 +7,7 @@ paths:
 org: dock0
 artifacts:
 - name: kernel
-  version: 4.6-rc5_1
+  version: 4.6-rc6_1
   file: vmlinuz
 - name: rootfs
   version: 0.0.199
