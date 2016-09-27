@@ -2,7 +2,7 @@ vm_spec
 ========
 
 [![Automated Build](http://img.shields.io/badge/automated-build-green.svg)](https://hub.docker.com/r/dock0/vm_spec/)
-[![Build Status](https://img.shields.io/circleci/project/dock0/vm_spec.svg)](https://circleci.com/gh/dock0/vm_spec)
+[![Build Status](https://img.shields.io/circleci/project/dock0/vm_spec/master.svg)](https://circleci.com/gh/dock0/vm_spec)
 [![MIT Licensed](http://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
 
 My deployment spec for [dock0](https://github.com/dock0/dock0)
