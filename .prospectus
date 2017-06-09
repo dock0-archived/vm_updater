@@ -1,19 +1,29 @@
+Prospectus.extra_dep('file', 'prospectus_circleci')
+
 require 'yaml'
 
-YAML.load(File.read('config.yaml'))['artifacts'].each do |artifact|
-  name, version = artifact.values_at('name', 'version')
+item do
+  noop
 
-  item do
-    name "vm_spec::#{name}"
+  deps do
+    YAML.load(File.read('config.yaml'))['artifacts'].each do |artifact|
+      aname, aversion = artifact.values_at('name', 'version')
 
-    expected do
-      github_release
-      repo "dock0/#{name}"
-    end
+      item do
+        name "vm_spec::#{aname}"
 
-    actual do
-      static
-      set version
+        expected do
+          github_release
+          repo "dock0/#{aname}"
+        end
+
+        actual do
+          static
+          set aversion
+        end
+      end
     end
   end
+
+  extend ProspectusCircleci::Build.new('dock0/vm_spec')
 end
