@@ -10,7 +10,7 @@ item do
       aname, aversion = artifact.values_at('name', 'version')
 
       item do
-        name "vm_spec::#{aname}"
+        name aname
 
         expected do
           github_release
