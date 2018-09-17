@@ -7,7 +7,7 @@ paths:
 org: dock0
 artifacts:
 - name: kernel
-  version: 4.19-rc3-1
+  version: 4.19-rc4-1
   file: vmlinuz
 - name: rootfs
   version: 0.0.200
