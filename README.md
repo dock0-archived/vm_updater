@@ -6,6 +6,8 @@ vm_updater
 
 VM updater for [dock0](https://github.com/dock0/dock0)-based VMs
 
+## Usage
+
 For an example config for this image, check out my personal [vm_spec](https://github.com/dock0/vm_spec)
 
 ## License
