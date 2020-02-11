@@ -2,4 +2,4 @@
 
 set -euo pipefail
 
-docker run -i test gem which dock0
+docker run -i new gem which dock0
