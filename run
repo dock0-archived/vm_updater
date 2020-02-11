@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+git clone "${REPO}" /opt/vm_spec --single-branch --branch "${BRANCH}"
+dock0 install /opt/vm_spec/config.yaml
+

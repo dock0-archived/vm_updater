@@ -1,37 +1,12 @@
-vm_spec
+vm_updater
 ========
 
-[![Automated Build](https://img.shields.io/docker/build/dock0/vm_spec.svg)](https://hub.docker.com/r/dock0/vm_spec/)
-[![Build Status](https://img.shields.io/travis/com/dock0/vm_spec.svg)](https://travis-ci.com/dock0/vm_spec)
-[![MIT Licensed](http://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dock0/vm_updater/Build)](https://github.com/dock0/vm_updater/actions))
+[![License](https://img.shields.io/github/license/dock0/vm_updater)](https://github.com/dock0/vm_updater/blob/master/LICENSE)
 
-My deployment spec for [dock0](https://github.com/dock0/dock0)
+VM updater for [dock0](https://github.com/dock0/dock0)-based VMs
 
-## Contents
-
-This has the necessary files for [dock0](https://github.com/dock0/dock0) to run `dock0 install`
-
-* config.yaml -- defines version of kernel, rootfs, and initrd to use when building the VM
-* templates -- has the grub config templates to lay down so the VM can boot
-
-It also has the Docker information in `meta/` to build a docker container that runs dock0.
-
-The `dev/update.rb` script checks GitHub to see if any of the artifacts have updated versions.
-
-## To use
-
-The provided Docker container will automate deploying this spec
-
-```
-docker run -ti -v /dev/sda:/opt/device -v /run/vm/bootmnt:/run/vm/bootmnt dock0/vm_spec
-```
-
-To use an alternate branch for the installation, specify it via the environment:
-
-```
-# this will use the dev branch
-docker run -ti -e BRANCH=dev -v /dev/sda:/opt/device -v /run/vm/bootmnt:/run/vm/bootmnt dock0/vm_spec
-```
+For an example config for this image, check out my personal [vm_spec](https://github.com/dock0/vm_spec)
 
 ## License
 
