@@ -1,4 +1,4 @@
-FROM docker.pkg.github.com/dock0/arch/arch:20210108-da118d0
+FROM docker.pkg.github.com/dock0/arch/arch:20210108-b44d4bf
 MAINTAINER akerl <me@lesaker.org>
 ENV BRANCH master
 RUN pacman -S --needed --noconfirm ruby grub
